@@ -2,7 +2,6 @@ const path = require('path'),
       HtmlWebpackPlugin = require('html-webpack-plugin'),
       CleanWebpackPlugin = require('clean-webpack-plugin'),
       webpack = require('webpack')
-      // MinifyPlugin = require("babel-minify-webpack-plugin")
 
 module.exports = {
   entry: {
@@ -42,7 +41,6 @@ module.exports = {
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
-    // new MinifyPlugin()
   ],
   stats: {
     colors: true
